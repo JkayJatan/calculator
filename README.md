@@ -1,4 +1,6 @@
 # 🧮 Calculator (HTML, CSS, JavaScript)
+link-https://jkayjatan.github.io/calculator/
+---
 
 A simple and responsive calculator built using **HTML, CSS, and JavaScript**.  
 This project demonstrates basic front-end web development concepts like DOM manipulation, styling, and event handling.
