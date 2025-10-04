@@ -19,8 +19,8 @@ buttonsarray.forEach(btn => {
         }
         else if (value == '=') {
             try {
-                string = eval(string);  // using eval as you had
-                string = string.toString(); // ensure it's a string
+                string = eval(string);
+                string = string.toString();
                 updateDisplay();
             } catch {
                 display.value = "Error";
@@ -29,11 +29,10 @@ buttonsarray.forEach(btn => {
         }
         else {
             if (operators.includes(value)) {
-                if (string === "") return; // stop if operator is first
+                if (string === "") return;
                 let lastChar = string.slice(-1);
                 
                 if (operators.includes(lastChar)) {
-                    // overwrite last operator
                     string = string.slice(0, -1) + value;
                 } else {
                     string += value;
@@ -48,13 +47,11 @@ buttonsarray.forEach(btn => {
 
 function updateDisplay() {
     display.value = string;
-
-    // adjust font size based on length
     if (string.length > 12) {
-        display.style.fontSize = "20px";   // smaller font
+        display.style.fontSize = "20px";
     } else if (string.length > 8) {
-        display.style.fontSize = "28px";   // medium font
+        display.style.fontSize = "28px";
     } else {
-        display.style.fontSize = "36px";   // default font
+        display.style.fontSize = "36px";
     }
 }
