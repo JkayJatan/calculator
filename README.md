@@ -1,5 +1,5 @@
 # 🧮 Calculator (HTML, CSS, JavaScript)
-link-https://jkayjatan.github.io/calculator/
+link-https://calculator-three-nu-70.vercel.app/
 ---
 
 A simple and responsive calculator built using **HTML, CSS, and JavaScript**.  
